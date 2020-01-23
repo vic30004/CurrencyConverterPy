@@ -9,6 +9,7 @@ class CurrencyConveret:
       # create the application window using Tk()
         window = Tk()
         window.title("Currency Converter")
+        # style the app
         window.configure(bg="#333")
 
   # Add a widget label to the app window
@@ -29,4 +30,11 @@ class CurrencyConveret:
 
         self.convertedAmountVar = StringVar()
         lblConvertedAmount = Label(window, font="Helvetica 12 bold", bg="#333", textVariable = self.convertedAmountVar).grid(row=3, column=2, sticky = E)
-# style the app
+
+
+    #Create the conver and clear button
+        btnConvertedAmount = Button(window, text ="Convert", font ="Helvetica 12 bold", bg ="ivory", fg="black", command = self.convertedAmount).grid(row=4,column=2,sticky=E)
+
+        btndelete_all = Button(window, text ="Delete", font ="Helvetica 12 bold", bg ="ivory", fg="black", command = self.delete_all).grid(row=4,column=6,padx=25,pady=25,sticky=E)
+
+        window.mainloop()
