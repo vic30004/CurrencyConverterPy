@@ -14,4 +14,4 @@ I used Python for this project and tkinter module to create the GUI.
 
 # How to run app
 
-In order to run this application, simple clone or download the repo and run it using you your preferred IDE.
+In order to run this application, simply clone or download the repo and run it using you your preferred IDE.
