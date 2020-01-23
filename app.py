@@ -19,4 +19,14 @@ class CurrencyConveret:
         Label(window, font="Helvetica 12 bold", bg="#333",
               text="Conversion Amount").grid(row=3, column=1, sticky=W)
 
+   #create an object and use Entry() to take user input
+   
+        self.amounttoConvert = StringVar() #moitors changes
+        Entry(window, textvariable = self.amounttoConvert, justify =RIGHT).grid(row=1, column=2) #will take user input
+
+        self.conversionRateVar = StringVar()
+        Entry(window, textvariable = self.conversionRateVar, justify =RIGHT).grid(row=2, column=2) #will take user input
+
+        self.convertedAmountVar = StringVar()
+        lblConvertedAmount = Label(window, font="Helvetica 12 bold", bg="#333", textVariable = self.convertedAmountVar).grid(row=3, column=2, sticky = E)
 # style the app
