@@ -56,5 +56,5 @@ class CurrencyConveret:
         self.conversionRateVar.set("")
         self.convertedAmountVar.set("")
 
-CurrencyConveret()
 
+CurrencyConveret()
